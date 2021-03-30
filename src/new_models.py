@@ -35,7 +35,7 @@ class user_followers(Base):
     __tablename__ = 'user_followers'
     
     id = Column(Integer, primary_key=True)
-    user_id = Column(Integer, ForeignKey('posts.id'))
+    user_id = Column(Integer, ForeignKey('user.id'))
     type_ = Column(String(250), nullable=False)
     created_at = Column(String(250), nullable=False)
     updated_at = Column(String(250), nullable=False)
